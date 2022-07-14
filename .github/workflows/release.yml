@@ -13,11 +13,11 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "Shubham Tatvamasi"
-          git config user.email "shubhamtatvamasi@gmail.com"
+          git config user.name "Paulo Calaes"
+          git config user.email "paulocalaes@gmail.com"
 
       - name: Add helm repo
-        run: helm repo add orc8r https://shubhamtatvamasi.github.io/magma-charts-3-17-2022
+        run: helm repo add orc8r https://paulocalaes.github.io/magma-charts-3-17-2022
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.3.0

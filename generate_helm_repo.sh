@@ -32,7 +32,7 @@ else
 
   # Replace orc8rlib repo link
   find ${CHARTS_REPO} -maxdepth 2 -type f -name 'Chart.yaml' -exec \
-    yq e '(.dependencies[] | select(.name == "orc8rlib") | .repository) = "https://shubhamtatvamasi.github.io/magma-charts-3-17-2022"' -i {} \;
+    yq e '(.dependencies[] | select(.name == "orc8rlib") | .repository) = "https://paulocalaes.github.io/magma-charts-3-17-2022"' -i {} \;
 
   # git checkout charts/orc8rlib/Chart.yaml
 fi
