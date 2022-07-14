@@ -3,7 +3,7 @@
 set -ex
 
 # git clone https://github.com/magma/magma.git --depth 1
-MAGMA_ROOT=/tmp/magma
+MAGMA_ROOT=/home/paulocalaes/magma
 
 mkdir -p charts
 CHARTS_REPO=${PWD}/charts
@@ -22,10 +22,10 @@ else
     [secrets]="orc8r/cloud/helm/orc8r/charts/secrets"
   )
 
-  for orc8r_chart in "${orc8r_helm_charts[@]}"
-  do
-    cp -r ${MAGMA_ROOT}/${orc8r_chart} ${CHARTS_REPO}
-  done
+  # for orc8r_chart in "${orc8r_helm_charts[@]}"
+  # do
+  #   cp -r ${MAGMA_ROOT}/${orc8r_chart} ${CHARTS_REPO}
+  # done
 
   # Delete Chart.lock files
   find ${CHARTS_REPO} -type f -name 'Chart.lock' -delete
